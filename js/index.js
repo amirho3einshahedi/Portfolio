@@ -36,7 +36,7 @@ function dataValidation() {
         modalLogin.style.backgroundColor = 'green';
         modalLogin.textContent = 'Welcome! 😊';
         setTimeout(function () {
-            window.location.href = '../main/index.html'
+            window.location.href = './index.html'
         }, 2000)
     } else {
         modalLogin.style.display = 'block';
