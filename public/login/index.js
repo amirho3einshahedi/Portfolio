@@ -16,6 +16,8 @@ let passwordInput = document.querySelector('#password');
 let modalLogin = document.querySelector('.modal');
 let formLogin = document.querySelector('.form')
 let formReg = document.querySelector('.form-reg')
+let userNameReg = document.querySelector('#username-reg');
+let passwordReg = document.querySelector('#password-reg');
 
 
 function submitHandler(event) {
@@ -34,7 +36,7 @@ function dataValidation() {
         modalLogin.style.backgroundColor = 'green';
         modalLogin.textContent = 'Welcome! 😊';
         setTimeout(function () {
-            window.location.href = 'Web/home.html.html'
+            window.location.href = '../main/index.html'
         }, 2000)
     } else {
         modalLogin.style.display = 'block';
@@ -55,3 +57,15 @@ function showLogin() {
     formLogin.style.display = 'block'
     formReg.style.display = 'none'
 }
+function dataValidationReg() {
+    let userNameRegValue = userNameReg.value
+    let passwordRegValue = passwordReg.value
+    let newUser = {
+        id: userWeb.length + 1,
+        userName: userNameRegValue,
+        password: passwordRegValue
+    }
+
+    userWeb.push(newUser)
+}
+console.log(userWeb);

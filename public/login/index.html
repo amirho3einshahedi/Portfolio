@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -34,12 +34,12 @@
             <form class="form-reg" onsubmit="submitHandler(event)">
                 <h2 class="title-login">Login Here</h2>
                 <label for="username">Username</label>
-                <input type="text" id="username" placeholder="Enter Your Username To Register" required />
+                <input type="text" id="username-reg" placeholder="Enter Your Username To Register" required />
 
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter Your Password To Register" required />
+                <input type="password" id="password-reg" placeholder="Enter Your Password To Register" required />
 
-                <button onclick="dataValidation()" type="submit">Log In</button>
+                <button onclick="dataValidationReg()" type="submit">Log In</button>
             </form>
 
         </div>
@@ -47,7 +47,8 @@
     <div class="modal">
         You are not allowed to sign in
     </div>
-    <script src="./login.js"></script>
+    <script src="./bootstrap5_sandbox/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
