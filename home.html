@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="/bootstrap5_sandbox/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
@@ -63,7 +64,7 @@
                         </div>
                     </div>
                     <div class="header-content__right">
-                        <img src="./images/header-img.svg" alt="">
+                        <img class="header-content__img" src="./images/header-img.svg" alt="">
                     </div>
                 </div>
 
@@ -217,12 +218,19 @@
             <div class="container">
                 <div class="copyright-text">
                     <p>Copyright © 2018-2019 </p>
-                    <p>Interactive ART Company All rights reserved</ح>
+                    <p>Interactive ART Company</p>
                 </div>
             </div>
         </section>
     </footer>
+    <script>
+    const menuButton = document.querySelector('.fa-bars');
+    const menu = document.querySelector('.menu');
 
+    menuButton.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+</script>
 </body>
 
 </html>

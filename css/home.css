@@ -80,11 +80,13 @@
 
 .header-content__right {
     flex-basis: 50%;
-    width: 100%;
+}
+.header-content__img{
+    max-width: 100%;
 }
 
 .header-content__holder {
-    width: 28rem;
+    max-width:30rem;
 }
 
 .header-content__titel {
@@ -266,6 +268,7 @@
     padding-bottom: 70px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .portfolio {
@@ -295,6 +298,7 @@
 
 .footer-item__holder {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     width: 100%;
@@ -361,59 +365,4 @@
 
 
 
-/* responsive project */
 
-@media only screen and (max-width: 1200px) {
-    .container {
-        max-width: 960px;
-    }
-
-
-}
-
-@media only screen and (max-width: 992px) {
-    .container {
-        max-width: 720px;
-    }
-
-    .menu-button {
-        display: none;
-    }
-
-    .fa-bars {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .container {
-        max-width: 540px;
-    }
-
-    .menu {
-        display: block;
-        flex-direction: column;
-        width: 185px;
-        position: fixed;
-        background: #80CBC4;
-        border-radius: 6px;
-        opacity: 0.95;
-        top: 0;
-        bottom: 0;
-        left: -185px;
-        padding-top: 25px;
-    }
-
-    .menu-item {
-        padding: 10px 0;
-    }
-
-
-
-}
-
-@media only screen and (max-width: 576px) {
-    .container {
-        max-width: 100%;
-    }
-}
